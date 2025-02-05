@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lizard Memecoin</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #2b6c4b;
+            color: #040404;
+        }
+        .banner {
+            width: 100%;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+        }
+        .banner img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: auto;
+        }
+        .container h3, .container h5 {
+            color: #ffcc00;
+            font-weight: bold;
+        }
+        .btn-custom {
+            background-color: #ffa500;
+        }
+        .btn-custom:hover {
+            background-color: #ff7f00;
+        }
+        nav {
+            background-color: #1f4d33;
+        }
+        .crypto-icons img {
+            width: 50px;
+            margin: 5px;
+        }
+        .section {
+            padding: 50px 0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper container">
+            <a href="#" class="brand-logo"><img src="assets/logotops.png" alt="Lizard Memecoin Logo" class="responsive-img" style="height: 50px;"></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#about">About</a></li>
+                <li><a href="#roadmap">Roadmap</a></li>
+                <li><a href="#tokenomics">Tokenomics</a></li>
+                <li><a href="#how-to-buy">How to Buy</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="banner center-align">
+        <img src="assets/logo.jpg" alt="Lizard Memecoin Banner" class="responsive-img">
+    </div>
+    
+    <div class="container">
+        <div class="section scrollspy" id="about">
+            <h3>About Lizard</h3>
+            <p>Once upon a time, in the depths of the internet, a party-loving frog named Lizard decided it was time to rule the crypto world. 
+            With sunglasses on and a backpack full of memes, Lizard became the symbol of fun and financial freedom!</p>
+        </div>
+        
+        <div class="section scrollspy" id="roadmap">
+            <h3>Roadmap</h3>
+            <ul class="collection with-header">
+                <li class="collection-header"><h5>Development Phases</h5></li>
+                <li class="collection-item">Phase 1: Launch 🚀</li>
+                <li class="collection-item">Phase 2: Community Building 🎉</li>
+                <li class="collection-item">Phase 3: Listings & Expansion 🌍</li>
+                <li class="collection-item">Phase 4: Moon Mission 🌕</li>
+            </ul>
+        </div>
+        
+        <div class="section scrollspy" id="tokenomics">
+            <h3>Tokenomics</h3>
+            <ul class="collection with-header">
+                <li class="collection-header"><h5>Supply Distribution</h5></li>
+                <li class="collection-item">Total Supply: 1,000,000,000 LIZARD</li>
+                <li class="collection-item">Liquidity Pool: 50%</li>
+                <li class="collection-item">Marketing & Development: 30%</li>
+                <li class="collection-item">Community Rewards: 20%</li>
+            </ul>
+        </div>
+        
+        <div class="section scrollspy" id="how-to-buy">
+            <h3>How to Buy Lizard Memecoin</h3>
+            <p>Follow these steps to buy Lizard using the Phantom Wallet:</p>
+            <ul class="collection with-header">
+                <li class="collection-header"><h5>Step-by-Step Guide</h5></li>
+                <li class="collection-item">Download and install the  Phantom Wallet.</li>
+                <li class="collection-item">Create a new wallet and secure your seed phrase.</li>
+                <li class="collection-item">Deposit SOL (Solana) into your wallet.</li>
+                <li class="collection-item">Go to a decentralized exchange (DEX) that supports Lizard.</li>
+                <li class="collection-item">Swap SOL for LIZARD and confirm the transaction.</li>
+                <li class="collection-item">Enjoy your Lizard coins and join the party!</li>
+            </ul>
+            <div class="center-align">
+                <a class="waves-effect waves-light btn btn-custom">Join Now</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.scrollspy');
+            M.ScrollSpy.init(elems, {scrollOffset: 50});
+        });
+    </script>
+</body>
+</html>
